@@ -1,0 +1,129 @@
+/* Universal Styling */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  background-color: #c8543c;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+span {
+  color: #c8543c;
+  font-style: italic;
+}
+
+nav {
+  background-color: white;
+  opacity: 75%;
+}
+
+/* About Styling */
+
+#about-div {
+  background-image: url("images/AdobeStock_301779119-scaled-removebg 2.png");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  color: #30475e;
+}
+
+#about-p {
+  background-color: #e8e8e8;
+  opacity: 60%;
+}
+
+#kristina-img {
+  clip-path: circle(50% at 50% 50%);
+}
+
+/* About Animation */
+
+/* Projects Styling */
+
+#projects-div {
+  background-color: #30475e;
+  opacity: 60%;
+}
+
+.card {
+  background-color: whitesmoke;
+  text-transform: uppercase;
+}
+
+/* Contact */
+#contact-form {
+  opacity: 60%;
+}
+
+/* Footer  */
+
+.footer {
+  background-color: #30475e;
+  opacity: 60%;
+}
+
+/* Divider */
+body {
+  background: white;
+}
+
+.divider {
+  /* minor cosmetics */
+  display: table;
+  font-size: 25px;
+  text-align: center;
+  width: 75%; /* divider width */
+  margin: 40px auto; /* spacing above/below */
+}
+.divider span {
+  display: table-cell;
+  position: relative;
+}
+.divider span:first-child,
+.divider span:last-child {
+  width: 50%;
+  top: 13px; /* adjust vertical align */
+  -moz-background-size: 100% 2px; /* line width */
+  background-size: 100% 2px; /* line width */
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.divider span:first-child {
+  /* color changes in here */
+  opacity: 60%;
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(transparent),
+    to(#30475e)
+  );
+  background-image: -webkit-linear-gradient(180deg, transparent, #30475e);
+  background-image: -moz-linear-gradient(180deg, transparent, #30475e);
+  background-image: -o-linear-gradient(180deg, transparent, #30475e);
+  background-image: linear-gradient(90deg, transparent, #30475e);
+}
+.divider span:nth-child(2) {
+  opacity: 60%;
+  color: #30475e;
+  padding: 0px 5px;
+  width: auto;
+  white-space: nowrap;
+}
+.divider span:last-child {
+  /* color changes in here */
+  opacity: 60%;
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(#30475e),
+    to(transparent)
+  );
+  background-image: -webkit-linear-gradient(180deg, #30475e transparent);
+  background-image: -moz-linear-gradient(180deg, #30475e, transparent);
+  background-image: -o-linear-gradient(180deg, #30475e, transparent);
+  background-image: linear-gradient(90deg, #30475e, transparent);
+}
