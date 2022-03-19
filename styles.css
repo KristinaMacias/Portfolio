@@ -1,7 +1,112 @@
 /* Universal Styling */
-
 * {
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #30475e;
+  opacity: 60%;
+}
+
+.brand-title {
+  font-size: 1.8rem;
+  margin: 0.5rem;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: #c8543c;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: lightgray;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #c8543c;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
 }
 
 .btn {
@@ -15,17 +120,15 @@ span {
   font-style: italic;
 }
 
-nav {
-  background-color: white;
-  opacity: 75%;
+.icon {
+  color: white;
 }
-
 /* About Styling */
 
 #about-div {
   background-image: url("images/AdobeStock_301779119-scaled-removebg 2.png");
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: cover;
   color: #30475e;
 }
 
@@ -36,6 +139,7 @@ nav {
 
 #kristina-img {
   clip-path: circle(50% at 50% 50%);
+  height: fit-content;
 }
 
 /* About Animation */
