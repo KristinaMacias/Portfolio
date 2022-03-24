@@ -78,16 +78,16 @@
         <div class="row text-center justify-content-center">
           <div class="col-md">
             <!-- Project 1 -->
-            <div class="card bg-light mb-2">
-              <div class="card-body text ceter">
+            <div class="card bg-light mb-2 h-100 ">
+              <div class="card-body text-center mb-2">
                 <h3 class="card-title mb-3">Calculator</h3>
                 <img
-                  class="img-fluid" style="max-height: 200px;"
-                  src="images/calulator.png"
+                  class="img-thumbnail" 
+                  src="images/calculator.png"
                   alt=""
                 />
                 <p class="mt-3">React & CSS</p>
-                <a class="btn mr-1" href="#">
+                <a class="btn" href="#">
                   <i class="bi bi-eye"></i>
 
                   Live Project
@@ -103,13 +103,14 @@
           </div>
           <div class="col-md">
             <!-- Project 2 -->
-            <div class="card bg-light mb-2">
+            <div class="card bg-light mb-2 h-100">
               <div class="card-body text-center">
-                <h3 class="card-title">To-Do App</h3>
+                <h3 class="card-title mb-3">To-Do App</h3>
                 <img
-                  class="project img-fluid"
+                  class="img-thumbnail"
                   src="images/comingsoon.jpg"
                   alt="" style="max-height: 200px;"
+                  
                 />
                 <p class="mt-3">React & Bootstrap (CRUD)</p>
                 <a class="btn" href="#">
@@ -126,10 +127,10 @@
           </div>
           <div class="col-md">
             <!-- Project 3 -->
-            <div class="card bg-light mb-2">
+            <div class="card bg-light mb-2 h-100">
               <div class="card-body text-center">
                 <h3 class="card-title mb-3">Tic-Tac-Toe</h3>
-                <img class="img-fluid w-75" src="images/tic-tac-toe.png" alt="" style="max-height: 200px;" />
+                <img class="img-thumbnail" src="images/tic-tac-toe.png" alt="" />
                 <p class="mt-3">JavaScript, CSS & HTML</p>
                 <a class="btn" href="https://kristinamacias.github.io/Tic-Tac-Toe-JavaScript/">
                   <i class="bi bi-eye"></i>
@@ -149,8 +150,8 @@
 
     <!-- Contact -->
     <section id="contact-form">
-      <div class="container p-5">
-        <form>
+      <div class="container">
+        <form action="https://formsubmit.co/e88fe64e81bc8bcf3daf148cd21f6283" method="POST" class="p-5">
           <div class="form-group">
             <label for="exampleFormControlInput1"></label>
             <input
@@ -158,6 +159,7 @@
               class="form-control"
               id="exampleFormControlInput1"
               placeholder="Email"
+              required
             />
           </div>
           <div class="form-group">
@@ -176,6 +178,7 @@
               id="exampleFormControlTextarea1"
               rows="3"
               placeholder="Message"
+              required
             ></textarea>
           </div>
           <button class="btn text-center">Submit</button>
