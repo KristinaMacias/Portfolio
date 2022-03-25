@@ -16,7 +16,7 @@ body {
   align-items: center;
   background-color: white;
   color: #30475e;
-  opacity: 60%;
+  opacity: 80%;
 }
 
 .brand-title {
@@ -134,7 +134,56 @@ span {
 
 #about-p {
   background-color: #e8e8e8;
-  opacity: 60%;
+  opacity: 80%;
+}
+
+/* About Animation */
+
+.hidden-header {
+  font-size: 1.7rem;
+}
+.i-intro {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.i-name {
+  font-size: 50px;
+}
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-title-item {
+  text-transform: uppercase;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #30475e;
+  align-items: center;
+  text-align: center;
+  /* display: flex; */
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 9s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
 }
 
 #kristina-img {
@@ -142,13 +191,16 @@ span {
   height: fit-content;
 }
 
-/* About Animation */
-
+#kristina-hidden-img {
+  clip-path: circle(50% at 50% 50%);
+  height: fit-content;
+  opacity: none;
+}
 /* Projects Styling */
 
 #projects-div {
   background-color: #30475e;
-  opacity: 60%;
+  opacity: 80%;
 }
 
 .card {
@@ -158,19 +210,14 @@ span {
 
 /* Contact */
 #contact-form {
-  opacity: 60%;
+  opacity: 80%;
 }
 
 /* Footer  */
 
 .footer {
   background-color: #30475e;
-  opacity: 60%;
-}
-
-/* Divider */
-body {
-  background: white;
+  opacity: 80%;
 }
 
 .divider {
@@ -202,16 +249,16 @@ body {
     0 0,
     0 100%,
     from(transparent),
-    to(#30475e)
+    to(white)
   );
-  background-image: -webkit-linear-gradient(180deg, transparent, #30475e);
-  background-image: -moz-linear-gradient(180deg, transparent, #30475e);
-  background-image: -o-linear-gradient(180deg, transparent, #30475e);
-  background-image: linear-gradient(90deg, transparent, #30475e);
+  background-image: -webkit-linear-gradient(180deg, transparent, white);
+  background-image: -moz-linear-gradient(180deg, transparent, white);
+  background-image: -o-linear-gradient(180deg, transparent, white);
+  background-image: linear-gradient(90deg, transparent, white);
 }
 .divider span:nth-child(2) {
-  opacity: 60%;
-  color: #30475e;
+  opacity: 80%;
+  color: white;
   padding: 0px 5px;
   width: auto;
   white-space: nowrap;
@@ -223,11 +270,22 @@ body {
     linear,
     0 0,
     0 100%,
-    from(#30475e),
+    from(white),
     to(transparent)
   );
-  background-image: -webkit-linear-gradient(180deg, #30475e transparent);
-  background-image: -moz-linear-gradient(180deg, #30475e, transparent);
-  background-image: -o-linear-gradient(180deg, #30475e, transparent);
-  background-image: linear-gradient(90deg, #30475e, transparent);
+  background-image: -webkit-linear-gradient(180deg, white, transparent);
+  background-image: -moz-linear-gradient(180deg, white, transparent);
+  background-image: -o-linear-gradient(180deg, white, transparent);
+  background-image: linear-gradient(90deg, white, transparent);
+}
+
+/* Media Querries */
+
+@media screen and (max-width: 780px) {
+  .i-title-wrapper {
+    display: none;
+  }
+  .desc {
+    margin-top: -40px;
+  }
 }
