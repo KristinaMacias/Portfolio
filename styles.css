@@ -197,7 +197,6 @@ span {
 
 #kristina-hidden-img {
   clip-path: circle(50% at 50% 50%);
-  height: fit-content;
   opacity: none;
 }
 
@@ -241,6 +240,7 @@ span {
   display: table;
   font-size: 25px;
   text-align: center;
+  text-transform: uppercase;
   width: 75%; /* divider width */
   margin: 40px auto; /* spacing above/below */
 }
