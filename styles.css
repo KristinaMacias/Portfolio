@@ -22,7 +22,6 @@ body {
 .brand-title {
   font-size: 1.8rem;
   margin: 0.5rem;
-  font-style: italic;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -117,7 +116,6 @@ body {
 
 span {
   color: #c8543c;
-  font-style: italic;
 }
 
 .icon {
@@ -140,16 +138,22 @@ span {
 /* About Animation */
 
 .hidden-header {
-  font-size: 1.7rem;
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 .i-intro {
-  font-size: 30px;
-  font-weight: 300;
+  margin-top: 10px;
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .i-name {
-  font-size: 50px;
+  font-size: 1.9rem;
+  font-weight: bold;
 }
+
 .i-title {
   height: 50px;
   overflow: hidden;
@@ -158,7 +162,7 @@ span {
 .i-title-item {
   text-transform: uppercase;
   height: 50px;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #30475e;
   align-items: center;
@@ -196,6 +200,18 @@ span {
   height: fit-content;
   opacity: none;
 }
+
+.language {
+  background-color: #30475e;
+  font: white;
+  opacity: 80%;
+}
+
+.lang-icon {
+  color: white;
+  margin-bottom: 15px;
+}
+
 /* Projects Styling */
 
 #projects-div {
@@ -249,16 +265,16 @@ span {
     0 0,
     0 100%,
     from(transparent),
-    to(white)
+    to(#30475e)
   );
-  background-image: -webkit-linear-gradient(180deg, transparent, white);
-  background-image: -moz-linear-gradient(180deg, transparent, white);
-  background-image: -o-linear-gradient(180deg, transparent, white);
-  background-image: linear-gradient(90deg, transparent, white);
+  background-image: -webkit-linear-gradient(180deg, transparent, #30475e);
+  background-image: -moz-linear-gradient(180deg, transparent, #30475e);
+  background-image: -o-linear-gradient(180deg, transparent, #30475e);
+  background-image: linear-gradient(90deg, transparent, #30475e);
 }
 .divider span:nth-child(2) {
   opacity: 80%;
-  color: white;
+  color: #30475e;
   padding: 0px 5px;
   width: auto;
   white-space: nowrap;
@@ -270,13 +286,13 @@ span {
     linear,
     0 0,
     0 100%,
-    from(white),
+    from(#30475e),
     to(transparent)
   );
-  background-image: -webkit-linear-gradient(180deg, white, transparent);
-  background-image: -moz-linear-gradient(180deg, white, transparent);
-  background-image: -o-linear-gradient(180deg, white, transparent);
-  background-image: linear-gradient(90deg, white, transparent);
+  background-image: -webkit-linear-gradient(180deg, #30475e, transparent);
+  background-image: -moz-linear-gradient(180deg, #30475e, transparent);
+  background-image: -o-linear-gradient(180deg, #30475e, transparent);
+  background-image: linear-gradient(90deg, #30475e, transparent);
 }
 
 /* Media Querries */
