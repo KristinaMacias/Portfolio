@@ -36,14 +36,14 @@
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a href="about-nav">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about-nav">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
       <!-- About Section -->
-      <div class="container">
+      <div class="container" id="about-nav">
         <div class="d-md-flex align-items-center justify-content-between p-5">
           <div class="p-5 rounded border text-center" id="about-p">
             <img
@@ -69,13 +69,11 @@
               </div>
             </div>
             <div class="desc">
-              <p>I develop and design responsive, stylish, and modern websites.
+              <p>I am an enthusiastic and movitated developer. I design responsive, stylish and modern websites and web applications.
               </p>
             </div>
             <div class="resume-button text-center">
-              <button class="btn mt-2" id="resume-btn">
-                <i class="bi bi-eye"></i> Resume
-              </button>
+              <a href="https://drive.google.com/file/d/1IwCUlYwPTp0pXfRhu9Hcry0iEAzQfbPt/view" class="btn" id="resume-button" target="_blank">View Resume</a>
             </div>
           </div>
           <div>
@@ -91,9 +89,9 @@
     </section>
 
     <!-- Projects -->
-    <div class="divider"><span></span><span>Projects & Tech Stack</span><span></span></div>
+    <div class="divider"><span></span><span>Projects</span><span></span></div>
     <section class="py-5" id="projects-div" data-target="about-nav">
-      <div class="container">
+      <div class="container" id="projects">
         <div class="row text-center justify-content-center">
           <div class="col-lg mb-5">
             <!-- Project 1 -->
@@ -105,18 +103,54 @@
                   src="images/calculator.png"
                   alt=""
                 />
-                <p class="mt-3">React & CSS</p>
-                <a class="btn text-nowrap" href="#">
+                <p class="mt-3">(In Progress)</p>
+                <a class="btn text-nowrap" href="https://kristinamacias.github.io/CalculatorApp-JavaScript/">
                   <i class="bi bi-eye"></i>
   
                   Live Project
                 </a>
-                <a class="btn m-1" href="#">
+                <a class="btn m-1" href="https://github.com/KristinaMacias/CalculatorApp-JavaScript">
                   <i class="bi bi-github"></i>
-  
                   Github
                 </a>
                 </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg mb-5">
+            <!-- Project 3 -->
+            <div class="card bg-light mb-2 h-100">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Tic-Tac-Toe</h3>
+                <img class="img-thumbnail" src="images/tic-tac-toe.png" alt="" />
+                <p class="mt-3">JavaScript, CSS & HTML</p>
+                <a class="btn text-nowrap" href="https://kristinamacias.github.io/Tic-Tac-Toe-JavaScript/">
+                  <i class="bi bi-eye"></i>
+                  Live Project
+                </a>
+  
+                <a class="btn m-1" href="https://github.com/KristinaMacias/Tic-Tac-Toe-JavaScript">
+                  <i class="bi bi-github"></i>
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg mb-5">
+            <!-- Project 3 -->
+            <div class="card bg-light mb-2 h-100">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Website</h3>
+                <img class="img-thumbnail" src="/images/Screen Shot 2022-03-31 at 8.38.40 PM.png" alt="" />
+                <p class="mt-3">CSS Grid Layout</p>
+                <a class="btn text-nowrap" href="https://kristinamacias.github.io/Gridbiz-Website/">
+                  <i class="bi bi-eye"></i>
+                  Live Project
+                </a>
+                <a class="btn m-1" href="https://github.com/KristinaMacias/Gridbiz-Website">
+                  <i class="bi bi-github"></i>
+                  Github
+                </a>
               </div>
             </div>
           </div>
@@ -132,51 +166,14 @@
                   
                 />
                 <p class="mt-3">React & Bootstrap (CRUD)</p>
-                <a class="btn text-nowrap" href="#">
+                <!-- <a class="btn text-nowrap" href="#">
                   <i class="bi bi-eye"></i>
   
                   Live Project
                 </a>
                 <a class="btn m-1" href="#">
                   <i class="bi bi-github"></i>
-                  Github
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg mb-5">
-            <!-- Project 3 -->
-            <div class="card bg-light mb-2 h-100">
-              <div class="card-body text-center">
-                <h3 class="card-title mb-3">Tic-Tac-Toe</h3>
-                <img class="img-thumbnail" src="images/tic-tac-toe.png" alt="" />
-                <p class="mt-3">JavaScript, CSS & HTML</p>
-                <a class="btn text-nowrap" href="https://kristinamacias.github.io/Tic-Tac-Toe-JavaScript/">
-                  <i class="bi bi-eye"></i>
-                  Live Project
-                </a>
-  
-                <a class="btn m-1" href="https://github.com/KristinaMacias/Tic-Tac-Toe-JavaScript">
-                  <i class="bi bi-github"></i>
-                  Github
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg mb-5">
-            <!-- Project 3 -->
-            <div class="card bg-light mb-2 h-100">
-              <div class="card-body text-center">
-                <h3 class="card-title mb-3">Tic-Tac-Toe</h3>
-                <img class="img-thumbnail" src="images/tic-tac-toe.png" alt="" />
-                <p class="mt-3">JavaScript, CSS & HTML</p>
-                <a class="btn text-nowrap" href="https://kristinamacias.github.io/Tic-Tac-Toe-JavaScript/">
-                  <i class="bi bi-eye"></i>
-                  Live Project
-                </a>
-                <a class="btn m-1" href="https://github.com/KristinaMacias/Tic-Tac-Toe-JavaScript">
-                  <i class="bi bi-github"></i>
-                  Github
+                  Github -->
                 </a>
               </div>
             </div>
@@ -187,45 +184,43 @@
 
    <!-- Languages -->
 
-   <div class="language section pb-4">
-     <div class="container text-light">
-       <div class="row">
+   <div class="language section">
+     <div class="container text-dark py-4">
+       <div class="row p-3">
          <div class="col text-center">
-           <i class="lang-icon fa-brands fa-react fa-5x"></i>
-           <h3>React.js</h3>
+           <i class="lang-icon fa-brands fa-react fa-4x"></i>
+           <h5>React.js</h5>
          </div>
          <div class="col text-center">
-           <i class="lang-icon fa-brands fa-js-square fa-5x"></i>
-           <h3>JavaScript</h3>
+           <i class="lang-icon fa-brands fa-js-square fa-4x"></i>
+           <h5>JavaScript</h5>
          </div>
          <div class="col text-center">
-           <i class="lang-icon fa-brands fa-html5 fa-5x"></i>
-           <h3>HTML</h3>
+           <i class="lang-icon fa-brands fa-html5 fa-4x"></i>
+           <h5>HTML</h5>
          </div>
-         <div class="col text-center">
-           <i class="lang-icon fa-brands fa-css3 fa-5x"></i>
-           <h3>CSS</h3>
          </div>
-         <div class="col text-center">
-           <i class="lang-icon fa-brands fa-bootstrap fa-5x"></i>
-           <h3>Bootstrap</h3>
-         </div>
-         <div class="col text-center">
-           <i class="lang-icon fa-brands fa-git fa-5x"></i>
-           <h3>Git</h3>
-         </div>
-         <div class="col text-center">
-           <i class="lang-icon fa-brands fa-github fa-5x"></i>
-           <h3>Github</h3>
-         </div>
+         <div class="row p-3">
+          <div class="col text-center">
+            <i class="lang-icon fa-brands fa-css3 fa-4x"></i>
+            <h5>CSS</h5>
+          </div>
+          <div class="col text-center">
+            <i class="lang-icon fa-brands fa-bootstrap fa-4x"></i>
+            <h5>Bootstrap</h5>
+          </div>
+          <div class="col text-center">
+            <i class="lang-icon fa-brands fa-github fa-4x"></i>
+            <h5>Github</h5>
+          </div>
        </div>
      </div>
    </div>
-    <div class="divider"><span></span><span>Let's Connect</span><span></span></div>
+    <div class="divider"><span></span><span>Contact</span><span></span></div>
 
     <!-- Contact -->
     <section id="contact-form">
-      <div class="container">
+      <div class="container" id="contact">
         <form action="https://formsubmit.co/e88fe64e81bc8bcf3daf148cd21f6283" method="POST" class="p-5">
           <div class="form-group">
             <input

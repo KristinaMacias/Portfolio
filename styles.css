@@ -201,13 +201,12 @@ span {
 }
 
 .language {
-  background-color: #30475e;
-  font: white;
+  background-color: white;
   opacity: 80%;
 }
 
 .lang-icon {
-  color: white;
+  color: #c8543c;
   margin-bottom: 15px;
 }
 
